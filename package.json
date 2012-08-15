@@ -1,0 +1,33 @@
+{
+  "name": "readline-prompter",
+  "version": "0.0.1",
+  "description": "Easily prompt the user with a series of questions.",
+  "homepage": [
+    ""
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": ["readline", "console", "questions", "command", "question"],
+  "author": "JP Richardson <jprichardson@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "dependencies": {
+    "batchflow": "0.0.3"
+  },
+  "devDepdencies": {
+    "suppose": "0.0.x",
+    "mocha": "1.3.x",
+    "autoresolve": "0.0.x",
+    "path-extra": "0.0.x"
+  },
+  "main": "./lib/readline-prompter.js",
+  "scripts": {
+    "test": "mocha test"
+  }
+}
