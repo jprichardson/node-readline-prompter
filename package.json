@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "Easily prompt the user with a series of questions.",
   "homepage": [
-    ""
+    "https://github.com/jprichardson/node-readline-prompter"
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:jprichardson/node-readline-prompter.git"
   },
   "keywords": ["readline", "console", "questions", "command", "question"],
   "author": "JP Richardson <jprichardson@gmail.com>",
