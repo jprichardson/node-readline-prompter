@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/jprichardson/node-readline-prompter.png)](http://travis-ci.org/jprichardson/node-readline-prompter)
 
 Node.js - readline-prompter
 ==========================
@@ -18,6 +19,12 @@ Installation
 
     npm install readline-prompter
 
+
+
+Node Versions
+-------------
+
+There is an error with the test on Node v0.6. Not sure what's causing it.
 
 
 Example
