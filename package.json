@@ -1,6 +1,6 @@
 {
   "name": "readline-prompter",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Easily prompt the user with a series of questions.",
   "homepage": [
     "https://github.com/jprichardson/node-readline-prompter"
@@ -18,11 +18,11 @@
     }
   ],
   "dependencies": {
-    "batchflow": "~0.0.4"
+    "batchflow": "0.1.x"
   },
-  "devDepdencies": {
+  "devDependencies": {
     "suppose": "0.0.x",
-    "mocha": "1.3.x",
+    "mocha": "1.4.x",
     "autoresolve": "0.0.x",
     "path-extra": "0.0.x"
   },

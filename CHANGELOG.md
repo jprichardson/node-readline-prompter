@@ -1,3 +1,8 @@
+0.1.0 / 2012-09-06
+------------------
+* Added Travis-CI support.
+* Updated `batchflow` dep.
+
 0.0.2 / 2012-09-05
 ------------------
 * Updated `batchflow` dependency.

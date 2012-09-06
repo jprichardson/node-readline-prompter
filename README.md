@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/jprichardson/node-readline-prompter.png)](http://travis-ci.org/jprichardson/node-readline-prompter)
 Node.js - readline-prompter
 ==========================
 
@@ -59,7 +60,7 @@ Output:
 Author
 ------
 
-`node-batchtransform` was written by [JP Richardson][aboutjp]. You should follow him on Twitter [@jprichardson][twitter]. Also read his coding blog [Procbits][procbits]. If you write software with others, you should checkout [Gitpilot][gitpilot] to make collaboration with Git simple.
+`node-readline-prompter` was written by [JP Richardson][aboutjp]. You should follow him on Twitter [@jprichardson][twitter]. Also read his coding blog [Procbits][procbits]. If you write software with others, you should checkout [Gitpilot][gitpilot] to make collaboration with Git simple.
 
 
 
