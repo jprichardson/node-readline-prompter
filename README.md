@@ -1,4 +1,4 @@
-[![build status](https://secure.travis-ci.org/jprichardson/node-readline-prompter.png)](http://travis-ci.org/jprichardson/node-readline-prompter)
+
 Node.js - readline-prompter
 ==========================
 
