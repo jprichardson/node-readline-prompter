@@ -1,31 +1,32 @@
-var assert = require('assert')
+var testutil = require('testutil')
   , P = require('autoresolve')
   , suppose = require('suppose')
   , path = require('path-extra')
-  , fs = require('fs');
+  , fs = require('fs')
 
-TEST_DIR = path.join(path.tempdir(), 'test-readline-prompter');
+TEST_DIR = path.join(path.tempdir(), 'test-readline-prompter')
 
 describe('readline-prompter', function() {
-    it('should prompt the user', function(done){
-        if (!fs.existsSync(TEST_DIR))
-            fs.mkdirSync(TEST_DIR);
 
-        var file = path.join(TEST_DIR, 'results.json');
+  it('should prompt the user', function(done){
+    if (!fs.existsSync(TEST_DIR))
+      fs.mkdirSync(TEST_DIR);
 
-        suppose('node', [P('test/resources/testscript1.js'), file])
-        .on('first name: (JP) ').respond('Jon Paul\n')
-        .on('last name: ').respond('Richardson\n')
-        .end(function(code) {
-            fs.readFile(file, 'utf8', function(err, data) {
-                var obj = JSON.parse(data);
+    var file = path.join(TEST_DIR, 'results.json');
 
-                assert(obj['first name'] === 'Jon Paul');
-                assert(obj['last name'] === 'Richardson');
-                assert(obj['cats name'] === 'petey');
+    suppose('node', [P('test/resources/testscript1.js'), file])
+    .on('first name: (JP) ').respond('Jon Paul\n')
+    .on('last name: ').respond('Richardson\n')
+    .end(function(code) {
+      fs.readFile(file, 'utf8', function(err, data) {
+        var obj = JSON.parse(data)
 
-                done();
-            });
-        });
+        EQ (obj['first name'], 'Jon Paul')
+        EQ (obj['last name'], 'Richardson')
+        EQ (obj['cats name'], 'petey')
+
+        done()
+      })
     })
+  })
 })

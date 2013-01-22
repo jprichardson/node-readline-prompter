@@ -9,7 +9,13 @@
     "type": "git",
     "url": "git@github.com:jprichardson/node-readline-prompter.git"
   },
-  "keywords": ["readline", "console", "questions", "command", "question"],
+  "keywords": [
+    "readline",
+    "console",
+    "questions",
+    "command",
+    "question"
+  ],
   "author": "JP Richardson <jprichardson@gmail.com>",
   "licenses": [
     {
@@ -18,13 +24,14 @@
     }
   ],
   "dependencies": {
-    "batchflow": "0.1.x"
+    "batchflow": "~0.3.0"
   },
   "devDependencies": {
     "suppose": "0.0.x",
-    "mocha": "1.4.x",
+    "mocha": "*",
     "autoresolve": "0.0.x",
-    "path-extra": "0.0.x"
+    "path-extra": "0.0.x",
+    "testutil": "~0.4.0"
   },
   "main": "./lib/readline-prompter.js",
   "scripts": {
