@@ -1,32 +1,33 @@
 var testutil = require('testutil')
   , P = require('autoresolve')
   , suppose = require('suppose')
-  , path = require('path-extra')
-  , fs = require('fs')
+  , fs = require('fs-extra')
+  , path = require('path')
 
-TEST_DIR = path.join(path.tempdir(), 'test-readline-prompter')
+var TEST_DIR = ''
 
 describe('readline-prompter', function() {
+  beforeEach(function() {
+    TEST_DIR = testutil.createTestDir('readline-prompter')
+  })
 
   it('should prompt the user', function(done){
-    if (!fs.existsSync(TEST_DIR))
-      fs.mkdirSync(TEST_DIR);
-
     var file = path.join(TEST_DIR, 'results.json');
 
     suppose('node', [P('test/resources/testscript1.js'), file])
     .on('first name: (JP) ').respond('Jon Paul\n')
     .on('last name: ').respond('Richardson\n')
+    .error(function(err) {
+      done(err)
+    })
     .end(function(code) {
-      fs.readFile(file, 'utf8', function(err, data) {
-        var obj = JSON.parse(data)
-
-        EQ (obj['first name'], 'Jon Paul')
-        EQ (obj['last name'], 'Richardson')
-        EQ (obj['cats name'], 'petey')
-
-        done()
-      })
+      var obj = fs.readJSONFileSync(file)
+      
+      EQ (obj['first name'], 'Jon Paul')
+      EQ (obj['last name'], 'Richardson')
+      EQ (obj['cats name'], 'petey')
+      
+      done()
     })
   })
 })
