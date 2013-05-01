@@ -27,7 +27,7 @@
     "batchflow": "~0.3.0"
   },
   "devDependencies": {
-    "suppose": "~0.1.0",
+    "suppose": "~0.2.0",
     "mocha": "*",
     "autoresolve": "0.0.x",
     "testutil": "~0.4.0",
