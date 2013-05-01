@@ -1,7 +1,9 @@
-[![build status](https://secure.travis-ci.org/jprichardson/node-readline-prompter.png)](http://travis-ci.org/jprichardson/node-readline-prompter)
+
 
 Node.js - readline-prompter
 ==========================
+
+[![build status](https://secure.travis-ci.org/jprichardson/node-readline-prompter.png)](http://travis-ci.org/jprichardson/node-readline-prompter)
 
 Easily prompt the user with a series of questions.
 
