@@ -1,6 +1,6 @@
 {
   "name": "readline-prompter",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Easily prompt the user with a series of questions.",
   "homepage": [
     "https://github.com/jprichardson/node-readline-prompter"
