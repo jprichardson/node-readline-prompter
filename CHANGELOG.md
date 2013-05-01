@@ -1,3 +1,9 @@
+0.2.0 / 2013-05-01
+------------------
+* updated `batchflow` dep
+* updated `suppose` dev-dep
+* added Node v0.10 compatibility
+
 0.1.1 / 2013-01-22
 ------------------
 * Updated `batchflow` dep.
